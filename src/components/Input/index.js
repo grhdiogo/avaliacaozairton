@@ -1,4 +1,3 @@
-import { useState, useEffect, useCallback } from "react";
 import { Container, Label, StyledInput } from "./styles";
 
 export default function Input({
@@ -6,12 +5,13 @@ export default function Input({
   label,
   kind,
   type = "text",
+  onChange
 }) {
 
   return (
     <Container>
       <Label>{label}</Label>
-      <StyledInput type={type} kind={kind} placeholder={placeholder} />
+      <StyledInput type={type} kind={kind} placeholder={placeholder} onChange={onChange} />
     </Container>
   );
 }

@@ -1,4 +1,5 @@
 import Text from '../Text';
+import Profile from '../Profile';
 import { Container } from './styles';
 export default function Navbar({
   text,
@@ -7,7 +8,7 @@ export default function Navbar({
   return (
     <Container>
       <Text size={"medium-2"} text={text} />
-      <p>Lívia</p>
+      <Profile />
     </Container>
   );
 }

@@ -3,6 +3,8 @@ import LibIcon from "./Lib";
 import HomeIcon from "./Home";
 import PatientIcon from "./Patient";
 import PauseIcon from "./Pause";
+import ArrowDown from "./ArrowDown";
+import ArrowUp from "./ArrowUp";
 
 export {
   BuildingIcon,
@@ -10,4 +12,6 @@ export {
   HomeIcon,
   PatientIcon,
   PauseIcon,
+  ArrowDown,
+  ArrowUp,
 }
