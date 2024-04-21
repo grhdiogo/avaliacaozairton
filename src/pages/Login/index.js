@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useNavigate } from 'react-router-dom';
 import Input from '../../components/Input'
 import Button from '../../components/Button'
 import Text from '../../components/Text'
@@ -11,6 +11,11 @@ import {
 } from './styles';
 
 export default function Main() {
+  const navigate = useNavigate();
+
+  function handleLoginClick() {
+    navigate("/dashboard")
+  }
 
   return (
     <Container>
@@ -22,7 +27,7 @@ export default function Main() {
         <DataContainer>
           <Input placeholder={'Insira seu e-mail'} label={'E-mail'} kind={'transparent'} />
           <Input placeholder={'Insira seu e-mail'} label={'E-mail'} kind={'transparent'} />
-          <Button label={'Entrar'} />
+          <Button label={'Entrar'} onClick={() => handleLoginClick()} />
         </DataContainer>
       </BodyContainer>
     </Container>

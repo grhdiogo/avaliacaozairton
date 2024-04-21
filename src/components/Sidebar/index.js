@@ -23,8 +23,8 @@ export default function Sidebar({
             <StyledText size={'medium'} text={"AgeMed"} />
           </TextContainer>
           <LinksContainer>
-            {asideData.map((v) => (
-              <LinkContainer onClick={() => goToPath(v.redirectTo)}>
+            {asideData.map((v, i) => (
+              <LinkContainer key={i} onClick={() => goToPath(v.redirectTo)}>
                 {v.icon}
                 <Text size={'small'} text={v.label} />
               </LinkContainer>

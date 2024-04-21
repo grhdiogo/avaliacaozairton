@@ -4,11 +4,12 @@ export default function Button({
   placeholder,
   label,
   type,
+  onClick
 }) {
 
   return (
     <Container>
-      <StyledButton>
+      <StyledButton onClick={onClick}>
         {label}
       </StyledButton>
     </Container>
